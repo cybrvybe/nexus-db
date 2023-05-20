@@ -1,0 +1,12 @@
+# Ignore everything
+**
+
+# Allow files needed for building the Docker image
+!/Dockerfile
+!/requirements.txt
+!/setup.py
+!/ai_services/
+!/cli/
+!/db_abstractions/
+!/db_services/
+!/utils/
