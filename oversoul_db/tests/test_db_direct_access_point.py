@@ -1,5 +1,5 @@
 import unittest
-from nexus_db.core.api.db_direct_access_point import DbDirectAccessPoint
+from oversoul_db.core.api.db_direct_access_point import DbDirectAccessPoint
 
 class TestDbDirectAccessPoint(unittest.TestCase):
     def setUp(self):

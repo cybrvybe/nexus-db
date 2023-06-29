@@ -5,13 +5,13 @@ with open("requirements.txt") as f:
 
 
 setup(
-    name="nexus-db",
+    name="oversoul-db",
     version="0.1",
-    packages=["nexus_db"],
+    packages=["oversoul_db"],
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "nexus=nexus_db.cli.main:main",
+            "oversoul=oversoul_db.cli.main:main",
         ],
     },
 )
