@@ -5,12 +5,12 @@ from urllib.parse import urljoin
 from util_scripts.logs.log_handler import LogHandler
 
 class DbDirectAccessPoint:
-    def __init__(self, nexus_db_api_url = os.getenv("DB_API_URL", "http://127.0.0.1:5000")):
-        self.nexus_db_api_url = nexus_db_api_url
+    def __init__(self, oversoul_db_api_url = os.getenv("DB_API_URL", "http://127.0.0.1:5000")):
+        self.oversoul_db_api_url = oversoul_db_api_url
         self.logger = LogHandler()
 
     def _construct_url(self, end_slugs):
-        return urljoin(self.nexus_db_api_url, end_slugs)
+        return urljoin(self.oversoul_db_api_url, end_slugs)
 
     def create_db(self, db_name: str):
         response = self._post_request("/database/create", {"db_name": db_name})
